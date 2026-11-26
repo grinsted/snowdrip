@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Packaging
+build/
+dist/
+wheels/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# Environments
+.pixi/
+.venv/
+venv/
+env/
+.env
+.envrc
+.conda/
+__pypackages__/
+.python-version
+
+# Lock files (a library pins nothing; revisit if the repo gets an environment of its own)
+pixi.lock
+uv.lock
+poetry.lock
+pdm.lock
+Pipfile.lock
+conda-lock.yml
+*.conda-lock.yml
+
+# Testing, linting, coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.tox/
+.nox/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Notebooks
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# AI assistants (local settings)
+.claude/settings.local.json
+
+# Data and outputs: forcing data is archived on Zenodo (data/README.md), not kept here
+data/*
+!data/README.md
+!data/folders.example.toml
+*.nc
+*.nc4
+*.grib
+*.grb
+*.h5
+*.hdf5
+*.zarr/
+*.parquet
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.tif
+*.tiff
+examples/*.png
+examples/*.pdf
+examples/output/

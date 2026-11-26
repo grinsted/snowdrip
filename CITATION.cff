@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use SnowDRIP, please cite the model paper and the archived code version."
+title: "SnowDRIP: a steady-state temperature-index model with firn refreezing for glaciers"
+type: software
+authors:
+  - family-names: Grinsted
+    given-names: Aslak
+    email: ag@glaciology.net
+    affiliation: "Niels Bohr Institute, University of Copenhagen"
+license: MIT
+version: 1.0.0.dev0
+# doi: (Zenodo DOI of the release, added at v1.0)
+# preferred-citation: (the SnowDRIP v1.0 GMD paper, added when published)

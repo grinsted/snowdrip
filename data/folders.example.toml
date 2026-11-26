@@ -1,0 +1,4 @@
+# Copy to folders.local.toml (not committed) to keep data sets outside the repository on this machine.
+# Paths may be absolute, start with ~, or be relative to this folder. Data sets not listed stay in data/<name>.
+
+era5_climatology = "~/data/era5_climatology"

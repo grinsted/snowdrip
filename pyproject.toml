@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snowdrip"
+dynamic = ["version"]
+description = "SnowDRIP: a steady-state temperature-index model with firn refreezing for glaciers"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Aslak Grinsted", email = "ag@glaciology.net" }]
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24", "scipy>=1.10"]
+keywords = ["glacier", "firn", "refreezing", "degree-day", "temperature-index", "mass balance"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+examples = ["xarray", "netCDF4", "matplotlib", "jupyter"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+packages = ["snowdrip"]
+
+[tool.setuptools.dynamic]
+version = { attr = "snowdrip.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
